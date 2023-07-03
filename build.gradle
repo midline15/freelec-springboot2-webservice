@@ -23,6 +23,10 @@ repositories {
     mavenCentral()
 }
 
+jar{ //plain archive 방지
+    enabled = false
+}
+
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
